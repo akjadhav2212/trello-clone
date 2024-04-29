@@ -12,6 +12,7 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
+
 const indexRouter = require('./src/routes/indexRouter');
 app.use('/api/v1',indexRouter);
 
