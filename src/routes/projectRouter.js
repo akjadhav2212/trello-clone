@@ -5,6 +5,7 @@ const Project = require('../models/projectSchema.model');
 const { default: mongoose } = require('mongoose');
 const sendEmail = require('../helper/sendMail');
 const User = require('../models/userSchema.model')
+
 //get all projects in which user is a member
 projectRouter.get('/', authMiddleware, async (req, res) => {
     try {
